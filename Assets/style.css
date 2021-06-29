@@ -1,17 +1,27 @@
 /* FONT */
 
 @font-face {
+    font-family: 'RalewayMedium';
+    src: local('Raleway Medium'),
+        url('fonts/Raleway/Raleway-Medium.woff2') format('woff2'),
+        url('fonts/Raleway/Raleway-Medium.woff') format('woff'),
+        url('fonts/Raleway/Raleway-Medium.ttf') format('truetype'),
+        url('fonts/Raleway/Raleway-Medium.eot') format('eot');
+}
+
+@font-face {
     font-family: 'Raleway';
     src: local('Raleway Regular'),
         url('fonts/Raleway/Raleway-Regular.woff2') format('woff2'),
         url('fonts/Raleway/Raleway-Regular.woff') format('woff'),
-        url('fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+        url('fonts/Raleway/Raleway-Regular.ttf') format('truetype'),
+        url('fonts/Raleway/Raleway-Regular.eot') format('eot');
 }
 
 /*  GENERAL PROPERTIES */
 
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'RalewayMedium', sans-serif;
     display: grid;
     grid-template-areas: 
     "header"
@@ -90,7 +100,7 @@ h1{
     margin: 0 20px;
     color: #0065FC;
     font-weight: bold;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'RalewayMedium', sans-serif;
     font-size: 14px;
 }
 
@@ -115,6 +125,7 @@ h1{
     padding: 10px;
     border: none;
     font-weight: bold;
+    font-family: 'RalewayMedium', sans-serif;
 }
 
 #searchLabel{
@@ -177,6 +188,7 @@ h1{
     font-weight: bold;
     border: 2px #F2F2F2 solid;
     margin: 5px;
+    transition: .4s;
 }
 
 .searchFilterItem a {
@@ -186,6 +198,7 @@ h1{
 .searchFilterItem:hover{
     background-color: #DEEBFF;
     border-color: #0065FC;
+    transform: scale(1.05);
 }
 
 .searchFilterItem:hover > a{
@@ -240,6 +253,11 @@ h1{
 
 .hostingItem, .popularItem, .activityItem{
     margin: 5px;
+    transition: .15s;
+}
+
+.hostingItem:hover, .popularItem:hover, .activityItem:hover{
+    transform: scale(1.04);
 }
 
 .hostingItem figure, .popularItem figure, .activityItem figure{
@@ -298,7 +316,7 @@ h1{
     border: none;
     margin-top: 20px;
     font-weight: bold;
-    font-family: "Raleway", sans-serif;
+    font-family: "RalewayMedium", sans-serif;
 }
 
 /* POPULAR */
