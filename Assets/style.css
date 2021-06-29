@@ -94,14 +94,18 @@ h1{
 
 #headerSignup{
     grid-area: signup;
-    background-color: transparent;
-    border: none;
     place-self: center end;
-    margin: 0 20px;
+    margin-right: 20px;
     color: #0065FC;
     font-weight: bold;
-    font-family: 'RalewayMedium', sans-serif;
-    font-size: 14px;
+    padding: 10px;
+    transition: .1s;
+    border-radius: 12px;
+}
+
+#headerSignup:hover{
+    background-color: #0065FC;
+    color: white;
 }
 
 /* SEARCH */
@@ -312,11 +316,9 @@ h1{
 }
 
 #hostingMore{
-    background-color: transparent;
-    border: none;
-    margin-top: 20px;
     font-weight: bold;
-    font-family: "RalewayMedium", sans-serif;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 /* POPULAR */
@@ -338,14 +340,14 @@ h1{
 
 .popularItem img{
     object-fit: cover;
-    width: 100%;
+    width: 120px;
     height: 140px;
     border-radius: 1.4em 0 0 1.4em;
 }
 
 .popularItem figcaption{
     margin-left: 20px;
-    width: 250px;
+    width: 150px;
 }
 
 /* ACTIVITY */
@@ -355,14 +357,14 @@ h1{
 }
 
 .activityItem figure{
-    flex-direction: column;
+    flex-flow: column nowrap;
     max-width: 350px;
     padding: 0;
 }
 
 .activityItem img {
     object-fit: cover;
-    height: 100px;
+    height: 120px;
     width: 320px;
     border-radius: 1.4em 1.4em 0 0;
 }
@@ -401,11 +403,11 @@ footer nav a{
         grid-template-areas: 
         "header header"
         "search search"
-        "hosting popular"
-        "activity activity"
+        "popular popular"
+        "hosting activity"
         "footer footer";
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 10px;
+        gap: 10px;
     }
 
     /* HEADER */
@@ -413,7 +415,7 @@ footer nav a{
     header{
         grid-template-areas: 
         "logo nav signup";
-        grid-template-columns: 200px 1fr 100px;
+        grid-template-columns: 200px 1fr 120px;
     }
 
     #headerMenu{
@@ -460,14 +462,20 @@ footer nav a{
 
     #popular{
         border-radius: 1.4em;
-        margin-right: 20px;
+        margin: 0 20px;
+    }
+
+    #popularContainer{
+        flex-flow: row wrap;
+        justify-content: space-around;
     }
 
     /* ACTIVITY */
 
-    #activityContainer{
-        flex-wrap: wrap;
-        max-height: 420px;
+    #activity{
+        background-color: #F2F2F2;
+        border-radius: 1.4em;
+        margin-right: 20px;
     }
 
     /* FOOTER */
@@ -503,19 +511,40 @@ footer nav a{
         justify-content: space-around;
     }
 
+    .hostingItem{
+        margin: 5px 4px;
+    }
+
     .hostingItem figure{
         max-width: 250px;
     }
     
     .hostingItem img{
         width: 250px;
-        height: 140px;
+        height: 120px;
+    }
+
+    /* POPULAR */
+
+    #popular{
+        margin-right: 20px;
+    }
+
+    #popularContainer{
+        flex-flow: column nowrap;
     }
 
     /* ACTIVITY */
 
+    #activity{
+        background-color: transparent;
+        border-radius: 0;
+        margin-right: 0;
+    }
+
     #activityContainer{
-        max-height: 280px;
+        flex-flow: row wrap;
+        justify-content: space-around;
     }
 
     .activityItem figure{
@@ -551,11 +580,12 @@ footer nav a{
     /* ACTIVITY */
 
     #activityContainer{
-        max-height: 280px;
+        flex-flow: column wrap;
+        max-height: 340px;
     }
 
     .bigActivity{
-        height: 264px;
+        height: 304px;
     }
 
     .bigActivity img{
