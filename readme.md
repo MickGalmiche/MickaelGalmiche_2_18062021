@@ -33,6 +33,6 @@ Il s'agit d'un outil de planification de vacances nommé "Réservia" (voir l'ima
 - Choisir la taille et le format adaptés pour les images.
 - Utiliser les balises sémantiques et n'avoir aucune erreur ni alerte au validateur W3C [HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmickgalmiche.github.io%2FMickaelGalmiche_2_18062021%2F) et [CSS.](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmickgalmiche.github.io%2FMickaelGalmiche_2_18062021%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
 - Site compatible avec les dernières versions de Chrome et Firefox.
-- Versionner le code avec Git. Le déployer dans un [repository distant](https://github.com/MickGalmiche/MickaelGalmiche_2_18062021) et sur les [pages de Github ou Gitlab.](https://mickgalmiche.github.io/MickaelGalmiche_2_18062021/)
+- Versionner le code avec Git. Le déployer dans un [repository distant](https://github.com/MickGalmiche/OC_Reservia) et sur les [pages de Github ou Gitlab.](https://mickgalmiche.github.io/OC_Reservia/)
 
 
